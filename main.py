@@ -85,10 +85,11 @@ class AttendanceAnalyzerApp:
             overall_attendance = attendance_summary.mean()
 
             insights = (
-                f"🎯 Most Regular Student: {most_regular} ({attendance_summary[most_regular]:.2f}%)\n"
-                f"🚶‍♂️ Least Regular Student: {least_regular} ({attendance_summary[least_regular]:.2f}%)\n"
-                f"📊 Overall Class Attendance: {overall_attendance:.2f}%"
+                f"Most Regular Student: {most_regular} ({attendance_summary[most_regular]:.2f}%)\n"
+                f"Least Regular Student: {least_regular} ({attendance_summary[least_regular]:.2f}%)\n"
+                f"Overall Class Attendance: {overall_attendance:.2f}%"
             )
+
             messagebox.showinfo("Attendance Insights", insights)
 
         except Exception as e:
